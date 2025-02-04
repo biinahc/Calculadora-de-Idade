@@ -1,0 +1,108 @@
+:root {
+    --pastel-blue: #A8DADC;
+    --pastel-pink: #8a4a9c;
+    --pastel-green: #C8E4D0;
+    --pastel-yellow: #FDEBD0;
+    --pastel-color: #673AB7;
+    --pastel-aniversario: #F6F7F9;
+    --font-primary: 'Poppins', sans-serif;
+
+}
+
+body {
+    font-style: italic;
+    font-family: URW Chancery L, cursive;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, var(--pastel-blue), var(--pastel-pink), #A8DADC);
+
+}
+
+.container {
+    background-color: #11526841;
+    padding: 30px;
+    border-radius: 100px;
+    text-align: center;
+
+
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input,
+label {
+    width: 250px;
+    padding: 08px;
+    margin: 5px;
+    border-radius: 40px;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+
+
+}
+
+button {
+    background-color: var(--pastel-color);
+   
+    padding: 15px 100px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 25px;
+
+
+}
+
+button:hover {
+    background-color: darken(var(--pastel-color), 10%);
+
+}
+
+
+.result {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--pastel-aniversario);
+    margin-top: 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.next-birthday {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--pastel-aniversario);
+    margin-top: 20px;
+    animation: fadeInUp 1s ease-in-out;
+
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    fa-calendar-alt {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+
+}
